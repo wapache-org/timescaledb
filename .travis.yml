@@ -199,7 +199,7 @@ jobs:
         - bash ./scripts/docker-run-memory-test.sh
 
     # Sanitizer tests
-    - if: (type = cron) OR (branch = prerelease_test)
+    - if: (type = cron) OR (branch = prerelease_test) OR NOT (branch = master)
       stage: test
       name: "ASAN and UBSAN tests"
       before_install:
