@@ -19,6 +19,7 @@ set(TEST_FILES_DEBUG
     compression_ddl.sql
     compression_errors.sql
     compression_hypertable.sql
+    compression_many_chunks.sql
     compression_segment_meta.sql
     compression_bgw.sql
     continuous_aggs.sql
